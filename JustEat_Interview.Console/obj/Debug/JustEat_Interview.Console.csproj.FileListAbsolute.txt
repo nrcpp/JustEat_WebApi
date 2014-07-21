@@ -1,0 +1,6 @@
+C:\projects\JustEat_Interview\JustEat_Interview.Console\bin\Debug\JustEat_Interview.Console.exe.config
+C:\projects\JustEat_Interview\JustEat_Interview.Console\obj\Debug\JustEat_Interview.Console.csprojResolveAssemblyReference.cache
+C:\projects\JustEat_Interview\JustEat_Interview.Console\bin\Debug\JustEat_Interview.Console.exe
+C:\projects\JustEat_Interview\JustEat_Interview.Console\bin\Debug\JustEat_Interview.Console.pdb
+C:\projects\JustEat_Interview\JustEat_Interview.Console\obj\Debug\JustEat_Interview.Console.exe
+C:\projects\JustEat_Interview\JustEat_Interview.Console\obj\Debug\JustEat_Interview.Console.pdb

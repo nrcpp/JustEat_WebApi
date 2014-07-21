@@ -1,0 +1,14 @@
+﻿@model JustEat_Interview.Logic.Restaurant
+@{
+    ViewBag.Title = "ShowProducts";
+}
+
+<h2>A list of products that sells by <i>'@Model.Name'</i> restaurant</h2>
+
+@foreach (var product in Model.ListOfProductsToSell)
+{
+    @:Name: @product.Name <br />
+    @:Price: £@product.Price <br />
+    @:Description: @product.Description <br />
+    <hr />
+}

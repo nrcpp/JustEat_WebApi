@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aboutme>
+  <general>
+    <name first="Denis" last="Kazakov"/>
+    <gender>male</gender>
+    <age>28</age>
+  </general>
+  <skills>
+    <skill name="C# .NET" experience="5"/>
+    <skill name="C++" experience="10"/>
+    <skill name="Java" experience="3"/>
+    <skill name="Web front-end" experience="1"/>
+  </skills>
+  <additional>
+    <projects numberComplete=">30"/>      
+    <english conversational="above middle" text="fluent"/>
+  </additional>
+</aboutme>

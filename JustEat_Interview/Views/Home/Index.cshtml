@@ -1,0 +1,32 @@
+﻿@using JustEat_Interview.Logic
+@model JustEat_Interview.Logic.RestaurantList
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model == null || Model.Restaurants == null)
+{
+    <h2>Just Eat Restaurants Details</h2>
+    using(Html.BeginForm())
+    {
+        @Html.Label("postCodeLable", "Enter Postcode (e.g. 'se24'): ");
+        @Html.Editor("postCode");    
+        <button type="submit">Submit</button>    
+    }
+}
+else
+{
+@Html.ActionLink("<< Back", "Index");
+<h2><i>@Model.Restaurants.Count</i> restaurants found for postcode <i>@Model.ShortResultText</i></h2>
+foreach (var rest in Model.Restaurants)
+{
+    <h3>Restaurant #@rest.Id</h3><br/>
+    @:Name: <b>@rest.Name</b>  <br />
+    @:Average rating:    <b>@rest.RatingStars</b> <br />
+    @:Restaurant logo: <br /><img src="@rest.GetLogoUrl()" /> <br />
+    <a href="@rest.Url" target="_blank">A link to the restaurant on the JUST EAT website >></a> <br />
+    @: @Html.ActionLink("A list of products the restaurant sell >>", "ShowProducts", new { id = rest.Id }, new { target = "_blank" }) 
+    <br />
+    <hr>
+}
+}
